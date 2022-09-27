@@ -69,8 +69,10 @@ jobs:
 
       # And finally run tests. I'm using pytest and all my pytest config is in my `pyproject.toml`
       # so this line is super-simple. But it could be as complex as you need.
-      - run: poetry run pytest
-      - run: poetry run coverage report
+      - name: Pytest # Run pytest
+        run: |
+          poetry run coverage run -m pytest
+          poetry run coverage report
       
       #- name: Coverage Badge
       #  uses: tj-actions/coverage-badge-py@v1.8
