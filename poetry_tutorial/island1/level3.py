@@ -1,4 +1,7 @@
 
+"""level3
+"""
+
 def is_acceptable_password(password: str) -> bool:
     """tells if a password is acceptable
 

@@ -1,4 +1,7 @@
 
+"""level2
+"""
+
 def first_word(text: str) -> str:
     """return the first word of a string
 
