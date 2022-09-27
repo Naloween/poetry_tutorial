@@ -10,7 +10,7 @@ packages = [{include = "poetry_tutorial"}]
 python = "^3.9"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^7.1.2"
 coverage = "^5.3"
 
 
