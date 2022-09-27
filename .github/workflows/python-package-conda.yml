@@ -16,12 +16,12 @@ jobs:
       - name: Run image # install poetry
         uses: abatilo/actions-poetry@v2.0.0
         with:
-          poetry-version: 1.0.10
+          poetry-version: 1.2.1
       - name: Install dependencies # install all dependencies
         run: poetry install
-      #- name: Pylint # Run pylint static analysis
-      #  run: |
-      #    poetry run pylint tsgen
+      - name: Pylint # Run pylint static analysis
+        run: |
+          poetry run pylint poetry_tutorial
       - name: Pytest # Run pytest
         run: |
           poetry run coverage run -m pytest
