@@ -5,3 +5,4 @@ poetry_tutorial
    :maxdepth: 4
 
    poetry_tutorial
+   tests
